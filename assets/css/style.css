@@ -736,17 +736,20 @@ section {
   overflow: hidden;
   background: linear-gradient(rgba(29, 200, 205, 0.80), rgba(29, 205, 89, 0.85)), url(../img/medicina-ucp.jpg) fixed center center;
   background-size: cover;
-  padding: 80px 0;
+  padding: 20px 30px 0 30px;
 }
 
 #call-to-action .cta-title {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
+  text-shadow: 0 0 12px #999;
 }
 
 #call-to-action .cta-text {
   color: #fff;
+  font-size: 18px;
+  text-shadow: 0 0 12px #666;
 }
 
 @media (min-width: 769px) {
@@ -760,7 +763,7 @@ section {
 #call-to-action .cta-btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 20px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 30px;
@@ -779,7 +782,7 @@ section {
 /* More Features Section
 --------------------------------*/
 #services {
-  padding: 60px 0 60px 0;
+  padding: 60px 0;
   overflow: hidden;
 }
 
