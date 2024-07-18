@@ -744,12 +744,18 @@ section {
   font-size: 28px;
   font-weight: 700;
   text-shadow: 0 0 12px #999;
+  text-align: center;
 }
 
 #call-to-action .cta-text {
   color: #fff;
   font-size: 18px;
   text-shadow: 0 0 12px #666;
+  text-align: justify;
+}
+
+#call-to-action .cta-text p {
+  text-align: center;
 }
 
 @media (min-width: 769px) {
