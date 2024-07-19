@@ -739,6 +739,10 @@ section {
   padding: 20px 30px 0 30px;
 }
 
+#call-to-action a label {
+  cursor: pointer;
+}
+
 #call-to-action .cta-title {
   color: #fff;
   font-size: 28px;
