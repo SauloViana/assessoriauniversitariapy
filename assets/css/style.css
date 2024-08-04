@@ -366,6 +366,7 @@ h6 {
   font-weight: 400;
   line-height: 56px;
   color: #fff;
+  text-shadow: 0 0 12px #999;
 }
 
 @media (max-width: 768px) {
@@ -381,6 +382,7 @@ h6 {
   padding: 0 15px;
   font-size: 24px;
   max-width: 60%;
+  text-shadow: 0 0 12px #999;
 }
 
 @media (max-width: 768px) {
@@ -393,7 +395,7 @@ h6 {
 
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -524,7 +526,7 @@ section {
 /* About Us Section
 --------------------------------*/
 #about {
-  padding: 60px 0;
+  padding-top: 60px;
   overflow: hidden;
 }
 
@@ -584,6 +586,7 @@ section {
 
 #about .content ul li {
   padding-bottom: 10px;
+  font-size: 1.2em;
 }
 
 /* Product Featuress Section
@@ -794,6 +797,21 @@ section {
 #services {
   padding: 60px 0;
   overflow: hidden;
+}
+
+#services .cta-title {
+  text-align: center;
+  font-size: 1.4em;
+  width: 80%;
+  margin: 40px auto;
+  color: #666;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#services .cta-title.remember {
+  margin-bottom: 0;
+  margin-top: 60px;
 }
 
 #services .box {
