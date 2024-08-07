@@ -527,6 +527,7 @@ section {
 --------------------------------*/
 #about {
   padding-top: 60px;
+  padding-bottom: 30px;
   overflow: hidden;
 }
 
@@ -551,10 +552,11 @@ section {
   }
 }
 
-#about .content .h2 {
+#about .content h2 {
   color: #333;
   font-weight: 300;
   font-size: 24px;
+  margin-bottom: 40px;
 }
 
 #about .content h3 {
@@ -582,6 +584,7 @@ section {
 #about .content ul {
   list-style: none;
   padding: 0;
+  margin-bottom: 2rem;
 }
 
 #about .content ul li {
@@ -739,7 +742,7 @@ section {
   overflow: hidden;
   background: linear-gradient(rgba(29, 200, 205, 0.80), rgba(29, 205, 89, 0.85)), url(../img/medicina-ucp.jpg) fixed center center;
   background-size: cover;
-  padding: 20px 30px 0 30px;
+  padding: 60px 30px 0 30px;
 }
 
 #call-to-action a label {
@@ -752,11 +755,12 @@ section {
   font-weight: 700;
   text-shadow: 0 0 12px #999;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 #call-to-action .cta-text {
   color: #fff;
-  font-size: 18px;
+  font-size: 22px;
   text-shadow: 0 0 12px #666;
   text-align: justify;
 }
@@ -773,6 +777,14 @@ section {
   }
 }
 
+#call-to-action .cta-btn-container * {
+  margin: auto;
+}
+
+#call-to-action .cta-btn-container i {
+  font-size: 22px;
+}
+
 #call-to-action .cta-btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -785,6 +797,7 @@ section {
   margin: 10px;
   border: 2px solid #fff;
   color: #fff;
+
 }
 
 #call-to-action .cta-btn:hover {
@@ -792,14 +805,14 @@ section {
   border: 2px solid #1dc8cd;
 }
 
-/* More Features Section
+/* Benefits Section
 --------------------------------*/
-#services {
+#benefits {
   padding: 60px 0;
   overflow: hidden;
 }
 
-#services .cta-title {
+#benefits .cta-title {
   text-align: center;
   font-size: 1.4em;
   width: 80%;
@@ -809,12 +822,12 @@ section {
   font-style: italic;
 }
 
-#services .cta-title.remember {
+#benefits .cta-title.remember {
   margin-bottom: 0;
   margin-top: 60px;
 }
 
-#services .box {
+#benefits .box {
   padding: 40px;
   margin-bottom: 30px;
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
@@ -823,18 +836,18 @@ section {
   height: 100%;
 }
 
-#services .icon {
+#benefits .icon {
   float: left;
 }
 
-#services .icon i {
+#benefits .icon i {
   color: #666666;
   font-size: 80px;
   transition: 0.5s;
   line-height: 0;
 }
 
-#services .icon i:before {
+#benefits .icon i:before {
   background: #1dc8cd;
   background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
   background-clip: border-box;
@@ -842,18 +855,18 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-#services h4 {
+#benefits h4 {
   margin-left: 100px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-#services h4 a {
+#benefits h4 a {
   color: #111;
 }
 
-#services p {
+#benefits p {
   font-size: 14px;
   margin-left: 100px;
   margin-bottom: 0;
@@ -861,21 +874,171 @@ section {
 }
 
 @media (max-width: 767px) {
-  #services .box {
+  #benefits .box {
     margin-bottom: 20px;
   }
 
-  #services .icon {
+  #benefits .icon {
     float: none;
     text-align: center;
     padding-bottom: 15px;
   }
 
-  #services h4,
-  #services p {
+  #benefits h4,
+  #benefits p {
     margin-left: 0;
     text-align: center;
   }
+}
+
+/* Services Section
+--------------------------------*/
+#services {
+  padding: 60px 0 60px 0;
+  overflow: hidden;
+}
+
+#services .box {
+  padding: 30px 40px 20px 40px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  background: #fff;
+  text-align: center;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+#services .box .info {
+  font-size: .8em;
+  margin-top: 15px;
+  text-align: justify;
+  color: #666;
+  font-style: italic;
+}
+
+#services .box .description {
+  border: 1px solid #1dc8cd;
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 1em;
+  font-style: normal;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+#services .box .info p {
+  margin-bottom: 15px;
+}
+
+#services .box .box-divider {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+  margin: 15px 0 5px 0;
+}
+
+#services h3 {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+#services .box h3 {
+  margin-bottom: 4px;
+}
+
+#services h4 {
+  color: #1dc8cd;
+  font-weight: 300;
+}
+
+#services h5 {
+  color: #999;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+#services h5 p span {
+  font-size: large;
+}
+
+#services h4 sup {
+  font-size: 16px;
+  font-weight: 300;
+  padding-right: 4px;
+}
+
+#services h4 span {
+  color: #333;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#services ul {
+  padding: 0;
+  list-style: none;
+  color: #999;
+  text-align: left;
+  line-height: 20px;
+}
+
+#services ul li {
+  padding-bottom: 12px;
+}
+
+#services ul i {
+  color: #1dc8cd;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+#services .get-started-btn {
+  display: inline-block;
+  padding: 6px 30px;
+  border-radius: 20px;
+  color: #515e61;
+  font-size: 2em;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+#services .box:hover {
+  outline: 2px solid #1dc8cd;
+  transform: scale(1.05);
+}
+
+#services .box:hover .get-started-btn {
+  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  color: white;
+  font-size: 1.5em;
+}
+
+#services .faq .values {
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+#services .faq .values sub {
+  display: none;
+}
+
+#services .faq .values h4:hover sub {
+  display: initial;
+}
+
+#services .faq .values h4 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+#services .faq {
+  padding: 10px 0 0 0;
+}
+
+#services .faq li {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* Frequently Asked Questions Section
@@ -885,18 +1048,18 @@ section {
   overflow: hidden;
 }
 
-#faq .faq-list {
+.faq .faq-list {
   padding: 0;
   list-style: none;
 }
 
-#faq .faq-list li {
+.faq .faq-list li {
   border-bottom: 1px solid #f0f0f0;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
-#faq .faq-list .question {
+.faq .faq-list .question {
   display: block;
   position: relative;
   font-family: #1dc8cd;
@@ -909,36 +1072,36 @@ section {
   transition: 0.3s;
 }
 
-#faq .faq-list i {
+.faq .faq-list .question i {
   font-size: 16px;
   position: absolute;
   left: 0;
   top: -2px;
 }
 
-#faq .faq-list p {
+.faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 25px;
 }
 
-#faq .faq-list .icon-show {
+.faq .faq-list .icon-show {
   display: none;
 }
 
-#faq .faq-list .collapsed {
+.faq .faq-list .collapsed {
   color: black;
 }
 
-#faq .faq-list .collapsed:hover {
+.faq .faq-list .collapsed:hover {
   color: #1dc8cd;
 }
 
-#faq .faq-list .collapsed .icon-show {
+.faq .faq-list .collapsed .icon-show {
   display: inline-block;
   transition: 0.6s;
 }
 
-#faq .faq-list .collapsed .icon-close {
+.faq .faq-list .collapsed .icon-close {
   display: none;
   transition: 0.6s;
 }
