@@ -763,6 +763,7 @@ section {
   font-size: 22px;
   text-shadow: 0 0 12px #666;
   text-align: justify;
+  font-family: "Montserrat", sans-serif;
 }
 
 #call-to-action .cta-text p {
@@ -906,6 +907,8 @@ section {
   text-align: center;
   transition: 0.4s;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 #services .box .info {
@@ -914,6 +917,13 @@ section {
   text-align: justify;
   color: #666;
   font-style: italic;
+}
+
+#services .center-content-valign {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #services .box .description {
@@ -934,9 +944,14 @@ section {
 #services .box .box-divider {
   display: block;
   width: 100%;
-  height: 2px;
+  max-height: 2px;
+  min-height: 2px;
   background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
   margin: 15px 0 5px 0;
+}
+
+#services .container .row .aos-init {
+  display: flex;
 }
 
 #services h3 {
@@ -1081,7 +1096,8 @@ section {
 
 .faq .faq-list p {
   margin-bottom: 0;
-  padding: 10px 0 0 25px;
+  padding: 10px 0 4px 25px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .faq .faq-list .icon-show {
